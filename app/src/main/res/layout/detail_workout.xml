@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/workout_bg">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Red"
+        android:id="@+id/workout_details_topToolBar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="35dp"
+            android:layout_gravity="start"
+            android:id="@+id/backbuttonnnnnn"
+            android:src="@drawable/back_button"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:paddingLeft="94dp"
+            android:paddingTop="2dp"
+            android:src="@drawable/rufit_logo_nbg"
+            android:id="@+id/imageView3" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginRight="5dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:src="@drawable/delete"
+                android:id="@+id/del"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:src="@drawable/edit"
+                android:id="@+id/editttttt"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/del"
+                android:layout_toStartOf="@+id/del" />
+
+</RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/Red"
+        android:layout_below="@+id/workout_details_topToolBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/toplayout_workoutdetails">
+
+        <TextView
+            android:id="@+id/date_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="2/06/2017"
+            android:textColor="@color/AntiqueWhite"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/duration_workout"
+            android:text="01:20:15"
+            android:background="@android:color/transparent"
+            android:textColor="@color/AntiqueWhite"
+            android:textSize="35sp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/duration"
+            android:layout_above="@id/duration_workout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:padding="5dp"
+            android:weightSum="3">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+            <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/calories"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            />
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/calories_workout"
+            android:text="145"
+            android:background="@android:color/transparent"
+            android:textColor="@color/AntiqueWhite"
+            android:textSize="35sp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/speed"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/speed_workout"
+                    android:text="25"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/AntiqueWhite"
+                    android:textSize="35sp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/distance"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/distance_workout"
+                    android:text="4.5"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/AntiqueWhite"
+                    android:textSize="35sp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notes"
+        android:textSize="22sp"
+        android:layout_below="@id/toplayout_workoutdetails"
+        android:textColor="@color/AntiqueWhite"
+        android:id="@+id/note_label"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="First Run using the app"
+        android:background="@android:color/transparent"
+        android:textSize="20sp"
+        android:textColor="@color/AntiqueWhite"
+        android:id="@+id/note_value"
+        android:textStyle="italic"
+        android:layout_below="@+id/note_label"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Shoe"
+        android:textSize="22sp"
+        android:textColor="@color/AntiqueWhite"
+        android:id="@+id/shoe_label"
+        android:textStyle="bold"
+        android:layout_below="@+id/note_value"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="11dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Adidas Yeezy 350 v2"
+        android:background="@android:color/transparent"
+        android:textSize="20sp"
+        android:textColor="@color/AntiqueWhite"
+        android:layout_below="@+id/shoe_label"
+        android:id="@+id/shoe_value"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="italic"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Feel"
+        android:textSize="22sp"
+        android:textColor="@color/AntiqueWhite"
+        android:id="@+id/feel_label"
+        android:textStyle="bold"
+        android:layout_below="@+id/shoe_value"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+    <ImageView
+        android:id="@+id/feel_value4"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        app:srcCompat="@android:drawable/btn_star"
+        android:layout_below="@+id/feel_label"
+        android:layout_toRightOf="@+id/feel_value3"
+        android:layout_toEndOf="@+id/feel_value3" />
+    <ImageView
+        android:id="@+id/feel_value3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        app:srcCompat="@android:drawable/btn_star"
+        android:layout_below="@+id/feel_label"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/feel_value1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/feel_label"
+        android:layout_gravity="center"
+        android:layout_toLeftOf="@+id/feel_value2"
+        app:srcCompat="@android:drawable/btn_star" />
+
+    <ImageView
+        android:id="@+id/feel_value2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/feel_label"
+        android:layout_gravity="center"
+        android:layout_toLeftOf="@+id/feel_value3"
+        android:layout_toStartOf="@+id/feel_value3"
+        app:srcCompat="@android:drawable/btn_star" />
+    <ImageView
+        android:id="@+id/feel_value5"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        app:srcCompat="@android:drawable/btn_star"
+        android:layout_below="@+id/feel_label"
+        android:layout_toRightOf="@+id/feel_value4" />
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_gravity="start"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/backButton_detailWorkout"
+        android:background="@drawable/rounded_button"
+        android:text="Done"
+        android:src="@drawable/back_button"
+        android:layout_margin="5dp"
+        />
+
+    <com.facebook.share.widget.ShareButton
+        android:id="@+id/fb_share_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/com_facebook_button_background"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_alignBaseline="@+id/backButton_detailWorkout"
+        android:layout_alignBottom="@+id/backButton_detailWorkout"
+        android:layout_toLeftOf="@+id/backButton_detailWorkout"
+        android:layout_toStartOf="@+id/backButton_detailWorkout" />
+
+    <Button
+        android:id="@+id/publishButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Publish"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/backButton_detailWorkout"
+        android:layout_alignTop="@+id/backButton_detailWorkout" />
+
+
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardPace"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_margin="8dp"
+    android:elevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/paceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:maxLines="3"
+            android:padding="8dp"
+            android:text="Quickest Pace in One Run"
+            android:textColor="#222"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/number1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/paceTitle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="1. "
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/num1PaceUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/number1"
+            android:layout_toEndOf="@+id/number1"
+            android:layout_toRightOf="@+id/number1"
+            android:text="user1" />
+
+        <TextView
+            android:id="@+id/colon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/num1PaceUser"
+            android:layout_toRightOf="@+id/num1PaceUser"
+            android:text=" : " />
+
+        <TextView
+            android:id="@+id/num1Pace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/colon1"
+            android:layout_toEndOf="@+id/colon1"
+            android:layout_toRightOf="@+id/colon1"
+            android:text="pace" />
+
+        <TextView
+            android:id="@+id/number2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="2. "
+            android:textStyle="bold"
+            android:layout_below="@+id/number1"
+            android:layout_alignLeft="@+id/number1"
+            android:layout_alignStart="@+id/number1" />
+
+        <TextView
+            android:id="@+id/num2PaceUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/number2"
+            android:layout_toEndOf="@+id/number2"
+            android:layout_toRightOf="@+id/number2"
+            android:text="user2" />
+
+        <TextView
+            android:id="@+id/colon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/num2PaceUser"
+            android:layout_toEndOf="@+id/num2PaceUser"
+            android:layout_toRightOf="@+id/num2PaceUser"
+            android:text=" : " />
+
+        <TextView
+            android:id="@+id/num2Pace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/colon2"
+            android:layout_toEndOf="@+id/colon2"
+            android:layout_toRightOf="@+id/colon2"
+            android:text="pace" />
+
+        <TextView
+            android:id="@+id/number3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="3. "
+            android:textStyle="bold"
+            android:layout_below="@+id/number2"
+            android:layout_alignLeft="@+id/number2"
+            android:layout_alignStart="@+id/number2" />
+
+        <TextView
+            android:id="@+id/num3PaceUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/number3"
+            android:layout_toEndOf="@+id/number3"
+            android:layout_toRightOf="@+id/number3"
+            android:text="user3" />
+
+        <TextView
+            android:id="@+id/colon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/num3PaceUser"
+            android:layout_toEndOf="@+id/num3PaceUser"
+            android:layout_toRightOf="@+id/num3PaceUser"
+            android:text=" : " />
+
+        <TextView
+            android:id="@+id/num3Pace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/colon3"
+            android:layout_toEndOf="@+id/colon3"
+            android:layout_toRightOf="@+id/colon3"
+            android:text="pace" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

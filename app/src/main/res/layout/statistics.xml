@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/goallayout"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Red"
+        android:id="@+id/topToolBar"
+        android:layout_marginBottom="4dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/rufit_logo_nbg"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="35dp"
+            android:layout_gravity="start"
+            android:id="@+id/sttstcs_backButton"
+            android:src="@drawable/back_button"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp">
+
+        <LinearLayout
+            android:id="@+id/statisticsFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/recordsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="22dp"
+                android:text="Record Runs"
+                android:textAppearance="@style/TextLabelSignIn"
+                android:textColor="@color/DarkRed"/>
+
+            <TextView
+                android:id="@+id/fststTimeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Fastest Run (Time)"
+                android:textAlignment="center"
+                android:textColor="@color/DimGray"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/fststTime_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Time of Run"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/fststTime_date"
+                android:layout_width="96dp"
+                android:layout_height="25dp"
+                android:text="Date of Run"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/fststPaceTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Fastest Run (Pace)"
+                android:textAlignment="center"
+                android:textColor="@color/DimGray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fststPace_pace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Pace of Run"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/fststPace_date"
+                android:layout_width="96dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="8dp"
+                android:text="Date of Run"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/lngstRunTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Longest Run"
+                android:textAlignment="center"
+                android:textColor="@color/DimGray"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/lngstRun_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Distance of Run"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/lngstRun_date"
+                android:layout_width="96dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="8dp"
+                android:text="Date of Run"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/activityTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:text="Activity (All Time)"
+                android:textAppearance="@style/TextLabelSignIn"
+                android:textColor="@color/DarkRed" />
+
+            <TextView
+                android:id="@+id/runTotal"
+                android:layout_width="320dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="0dp"
+                android:text="Total Runs:"
+                android:textColor="@color/DimGray"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/runDistance"
+                android:layout_width="323dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="0dp"
+                android:text="Total Distance:"
+                android:textColor="@color/DimGray"
+                android:textSize="18sp" />
+
+            <com.facebook.share.widget.ShareButton
+                android:id="@+id/fb_share_button"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/com_facebook_button_background"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp" />
+
+            <Button
+                android:id="@+id/publishButton"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Publish records to leaderboard"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
